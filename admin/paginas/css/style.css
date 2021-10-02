@@ -1,0 +1,9 @@
+.navbar{
+    border-radius: 0;
+}
+.navbar-collapse{
+    padding-left: 0;
+}
+a{
+    cursor: pointer;
+}

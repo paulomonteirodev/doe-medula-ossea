@@ -1,0 +1,1049 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1em;
+    font-family: Arial;
+}
+
+html, body {
+    height: 100%;
+    background-color: #eae9ea;
+}
+
+.layout {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.layout-menor {
+    width: 740px;
+    height: auto;
+    margin: 0 auto;
+}
+
+span{
+    font-weight: 700;
+}
+
+p {
+    font-size: 1em;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+h1 {
+    padding: 0;
+    text-align: center;
+    font-size: 1.875em;
+    text-transform: uppercase;
+    color: #3e3e3e;
+}
+
+h2 {
+    padding: 10px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #7e7e7e;
+}
+
+.centro {
+    margin: auto;
+}
+
+.icone-left {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.icone-right {
+    display: block;
+    float: right;
+    margin-left: 40px;
+}
+
+.img-60{
+    width: 70% !important;
+}
+
+/* HEADER */
+header#site-header {
+    background: url(../img/topo-menor.png) center no-repeat;
+    background-color: #fff;
+    width: 100%;
+    height: 170px;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+    z-index: 1;
+}
+
+    #logo {
+        width: 300px;
+        margin: 10px 0 0 10px;
+        display: block;
+        position: relative;
+        float: left;
+        margin-top: 2.5%;
+        padding: 0;
+    }
+
+nav img{
+    width: 35px;
+    float: right;
+    position: relative;
+    margin-top: 4%;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    background: linear-gradient(to bottom, #b2242a 0%, #c52e34 10%, #eb343b 50%, #b2242a 100%);
+    width: 620px;
+    float: right;
+    position: relative;
+    margin-top: 9%;
+    padding: 10px 0;
+    z-index: 999;
+    list-style: none;
+    display: block;
+}
+
+    .menu li {
+        width: auto;
+        position: relative;
+        float: left;
+        border-left: 2px solid #7e080d;
+    }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 10px 7px;
+            cursor: pointer;
+        }
+
+        .menu li .drop-down{
+            padding: 10px 20px 10px 7px;
+        }
+
+        
+        .menu li .setinha{
+            position: absolute;
+            right: 5px;
+            top: 8px;
+            height: 0;
+            width: 0;
+            border-top: 5px solid white;
+            border-left: 5px solid transparent; 
+            border-right: 5px solid transparent;
+        }
+
+    .menu a:hover {
+        background-color: #b2242a;
+    }
+
+    .menu li ul {
+        position: absolute;
+        top: 26px;
+        left: 0;
+        display: none;
+    }
+
+    .menu li:hover ul, menu li.over ul{
+        display: block;
+    }
+
+.menu li ul li{
+    display: block;
+    width: 300px;
+    margin: 0;
+    background-color: #eb343b;
+}
+
+.menu li ul li a{
+    margin: 0;
+    padding: 13px 0;
+    padding-left: 10px;
+    background-color: #eb343b;
+    position: relative;
+    display: block;
+}
+
+/* FIM DA HEADER */
+
+/* BANNER */
+#slide-conteiner {
+    width: 945px;
+    height: 425px;
+    position: absolute;
+    border: 8px solid #ffffff;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    bottom: -40px;
+    background: #fff;
+}
+
+#slide-conteiner-full {
+    margin: 0 0px;
+    width: 100%;
+    position: absolute;
+}
+
+    #slide-conteiner-full .banner {
+        position: relative;
+        top: 0;
+        z-index: 0;
+    }
+
+    #slide-conteiner-full ul li {
+        list-style: none;
+    }
+
+.banner {
+    width: 945px;
+    height: 425px;
+    float: left;
+}
+
+.pager{
+	position: absolute;
+	left: 44.5%;
+	bottom: 10px;
+	z-index: 1000;
+}
+.pager a{
+	background: #fff;
+	color: #fff;
+	border-radius: 50%;
+	text-decoration: none;
+	padding: 4px 9px;
+	margin: 0px 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0,.6);
+}
+.pager a:hover{
+	color: #C80000;
+	background: #C80000;
+}
+.pager a.activeSlide{
+	color: #C80000;
+	background: #C80000;
+}
+/* FIM DAS BANNER */
+
+/* CONTEUDO */
+.conteudo-full {
+    min-height: 500px;
+    height: auto;
+    color: #000000;
+    padding: 40px 0 30px 0;
+    position: relative;
+    z-index: 0;
+    clear: both;
+    overflow: auto;
+}
+
+.layout h1, .layout-menor h1{
+    padding-bottom: 20px;
+}
+
+.lipontos{
+    padding-left: 17px;
+    line-height: 22px;
+}
+
+.linumero{
+    padding-left: 17px;
+    line-height: 22px;
+}
+
+.lipontos li,.linumero li{
+    padding-bottom: 10px;
+}
+
+.txt-centro{
+    text-align: center;
+}
+
+.txt-esquerda{
+    position: relative;
+    width: 45%;
+    float: left;
+    padding-right: 5%;
+}
+
+.img-esquerda{
+    position: relative;
+    width: 30%;
+    float: left;
+    padding-top: 30px;
+    padding-left: 8%;
+}
+
+.img-centro{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.img-centro .img-subtitulo{
+    font-size: 0.8125em;
+    text-align: center;
+}
+
+.finalconteudo h2{
+    padding-top: 80px;
+}
+
+    /*------------------------------CONTATO--------------------------------*/
+    .contato{
+        font-size: 22px;
+    }
+    .contato a{
+        font-size: 22px;
+    }
+    .contato span{
+        font-size: 22px; 
+    }
+	.contato strong p{
+		text-align: center;
+		color: #009;	
+	}
+	label{
+		width: auto;	
+	}
+	td{
+		float: left;	
+	}
+	.botao{
+		width: 100px;
+		height: 50px;
+		border: #960608;
+		border-radius: 3px;
+		background: linear-gradient(to bottom, #DC2D30 10%, #B41417);
+		color: #fff;
+	}
+	.botao:hover{
+		background: linear-gradient(to bottom, #B41417 10%, #780103);
+	}
+    /*----------------------------FIM DO CONTATO---------------------------*/
+
+    /*-----------------------------DEPOIMENTOS-----------------------------*/
+    .depoimentos h2{
+        padding-top: 50px;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: 1px solid #5c5b5b;
+        color: #5c5b5b;
+    }
+
+    .depoimentos p{
+        padding-bottom: 20px;
+    }
+    /*----------------------------FIM DOS DEPOIMENTOS----------------------*/
+
+    /* ------------------------------INDEX---------------------------------*/
+    header#index-site-header {
+        background: url(../img/topo.png) center no-repeat;
+        width: 100%;
+        height: 610px;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1.index {
+        padding-top: 30px;
+    }
+
+    a div{
+        webkit-transition: all .8s cubic-bezier(0.23,1,0.32,1);
+        -moz-transition: all .8s cubic-bezier(0.23,1,0.32,1);
+        -o-transition: all .8s cubic-bezier(0.23,1,0.32,1);
+        -ms-transition: all .8s cubic-bezier(0.23,1,0.32,1);
+        transition: all .8s cubic-bezier(0.23,1,0.32,1);
+    }
+
+    #atividades{
+        margin-top: 80px;
+    }
+
+    #atividades h1{
+        font-weight: 300;
+        text-transform: capitalize;
+        font-size: 24px;
+        padding-top: 20px;
+        line-height: 0;
+    }
+
+    #atividades p{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: #323232;
+    }
+
+    #atividades li {
+        list-style: none;
+        width: 200px;
+        height: 200px;
+        margin-top: 60px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        float: left;
+    }
+
+        #atividades li a {
+            text-decoration: none;
+        }
+
+            #atividades li a div {
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                margin-bottom: 25px;
+            }
+
+            #atividades li a #foto01 {
+                background-position: 50% 50%;
+                background-size: 75px 75px;
+                background-image: url('../img/bolinha1.png');
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                box-shadow: 0 0 7px rgba(0,0,0,0.6);
+            }
+
+                #atividades #bolinha01:hover div{
+                    width: 125px;
+                    height: 125px;
+                    margin-bottom: 0;
+                }
+
+                #atividades #bolinha01:hover #foto01{
+                    background-size: 100px 100px;
+                    background-color: #6d6d6d;
+                }
+
+            #atividades li a #foto02 {
+                background-position: 50% 50%;
+                background-size: 75px 75px;
+                background-image: url('../img/bolinha2.png');
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                box-shadow: 0 0 7px rgba(0,0,0,0.6);
+            }
+
+                #atividades #bolinha02:hover div{
+                    width: 125px;
+                    height: 125px;
+                    margin-bottom: 0;
+                }
+
+                #atividades #bolinha02:hover #foto02{
+                    background-size: 100px 100px;
+                    background-color: #6d6d6d;
+                }
+
+            #atividades li a #foto03 {
+                background-position: 50% 50%;
+                background-size: 75px 75px;
+                background-image: url('../img/bolinha3.png');
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                box-shadow: 0 0 7px rgba(0,0,0,0.6);
+            }
+
+                #atividades #bolinha03:hover div{
+                    width: 125px;
+                    height: 125px;
+                    margin-bottom: 0;
+                }
+
+                #atividades #bolinha03:hover #foto03{
+                    background-size: 100px 100px;
+                    background-color: #6d6d6d;
+                }
+
+            #atividades li a #foto04 {
+                background-position: 50% 50%;
+                background-size: 75px 75px;
+                background-image: url('../img/bolinha4.png');
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                box-shadow: 0 0 7px rgba(0,0,0,0.6);
+            }
+
+                #atividades #bolinha04:hover div{
+                    width: 125px;
+                    height: 125px;
+                    margin-bottom: 0;
+                }
+
+                #atividades #bolinha04:hover #foto04{
+                    background-size: 100px 100px;
+                    background-color: #6d6d6d;
+                }
+    /*----------------------------FIM DO INDEX-----------------------------*/
+
+    /*-------------------------------LOCAIS--------------------------------*/
+    .locais .img-centro{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .locais .img-centro2{
+        margin: 0 auto;
+    }
+    .locais .img-esquerda{
+        position: relative;
+        width: 39%;
+        float: left;
+        margin-top: -30px;
+        padding-bottom: 30px;
+    }
+    /*-----------------------------FIM DOS LOCAIS--------------------------*/
+
+    /*------------------------------GALERIA--------------------------------*/
+	.conteudo-full-galeria{
+		color: #000000;
+		padding: 40px 0 30px 0;
+		position: relative;
+		z-index: 0;
+	}
+    #galeria{
+        position: relative;
+		min-height: 850px;		
+    }
+    #galeria li{
+        width: 29%;
+        height: 208px;
+        margin: 2%;
+        list-style: none;
+        float: left;
+        overflow: hidden;
+        box-shadow: 5px 5px 10px #000;
+        transition: all .3s ease-in;
+		background-color: #000;
+    }
+    #galeria li img{
+        transition: all .3s ease-in;
+        backface-visibility: hidden;
+    }
+
+    #galeria li:hover{
+        transform: scale(2.3);
+    }
+    /*----------------------------FIM DA GALERIA---------------------------*/
+
+/* FIM CONTEUDO */
+
+/* FOOTER */
+#site-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+}
+
+    #site-footer h2 {
+        color: #c1c1c1;
+        font-weight: normal;
+        font-size: 1.375em;
+        line-height: 30px;
+    }
+
+.footer-informacoes {
+    margin: auto;
+    min-height: 270px;
+    height: auto;
+    overflow: auto;
+    background-color: #444444;
+    padding-top: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+    .footer-informacoes .menu-footer {
+        position: relative;
+        float: left;
+        width: 360px;
+        padding-bottom: 20px;
+    }
+
+        .footer-informacoes .menu-footer li {
+            list-style: none;
+        }
+
+        .footer-informacoes .menu-footer a {
+            color: #c1c1c1;
+            text-decoration: none;
+            font-size: 0.9375em;
+            line-height: 22.5px;
+            text-transform: capitalize;
+        }
+
+            .footer-informacoes .menu-footer a:hover {
+                text-decoration: underline;
+            }
+
+    .footer-informacoes .equipe-footer {
+        position: relative;
+        float: left;
+        width: 340px;
+        padding-bottom: 20px;
+    }
+
+        .footer-informacoes .equipe-footer li {
+            list-style: none;
+            text-transform: capitalize;
+            color: #c1c1c1;
+            text-decoration: none;
+            font-size: 0.9375em;
+            line-height: 22.5px;
+        }
+
+    .footer-informacoes .redes-footer {
+        position: relative;
+        float: left;
+        width: 260px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+        .footer-informacoes .redes-footer .facebook {
+            width: 6%;
+        }
+
+        .footer-informacoes .redes-footer .email {
+            margin-top: 5px;
+            width: 12%;
+        }
+
+.colaboradores{
+    height: 160px;
+    background-color: #333333;
+    position: relative;
+}
+
+.colaboradores h1{
+    font-weight: normal;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+.colaborador{
+    width: 230px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -115px;
+    left: 50%;
+}
+
+.footer-conteudo {
+    height: 50px;
+    background-color: #444444;
+    position: relative;
+}
+
+    .footer-conteudo p {
+        color: #ffffff;
+        position: relative;
+        font-size: 0.875em;
+        top: 15px;
+        text-align: center;
+    }
+/* FIM FOOTER */ /**/
+
+/* MEDIA QUERIES */
+@media (max-width: 1020px){
+    .layout{
+        width: 640px;
+    }
+    .layout-menor{
+        width: 640px;
+    }
+    header#index-site-header{
+        height: 440px;
+        background-size: 100% 440px;
+    }
+    #logo{
+        width: 240px;
+    }
+    nav img{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .menu{
+        position: absolute;
+        margin: 0;
+        top: 25px;
+        right: 130px;
+        width: auto;
+        padding-right: 9px;
+        display: none;
+    }
+
+    .menu li{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+
+    .menu li .drop-down {
+        padding: 10px 0px;
+        padding-right: 5px;
+        padding-left: 3px;
+    }
+
+    .menu li .setinha {
+        left: 2px;
+        top: 12px;
+        border: none;
+        border-right: 5px solid white;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+
+    .menu li a {
+        display: block;
+        font-size: 12px;
+        padding: 10px 0px;
+        padding-right: 5px;
+        padding-left: 3px;
+    }
+
+    .menu li ul{
+        top: 0;
+        left: -147px;
+    }
+
+    .menu li ul li a{
+        padding-right: 7px;
+        padding-left: 5px;
+    }
+    
+    .menu li ul li{
+        width: auto;
+        padding: 0;
+    }
+    #slide-conteiner {
+        width: 627px;
+        height: 300px;
+    }
+    .banner {
+        width: 627px;
+        height: 300px;
+    }
+    #atividades{
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    #atividades li {
+        width: 45%;
+        height: 150px;
+        margin-left: 30px;
+    }
+    #atividades::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    #galeria li{
+        width: 46%;
+        height: 250px;
+    }
+
+    #galeria li:hover{
+        transform: scale(1);
+    }
+
+    .footer-informacoes .menu-footer {
+        width: 240px;
+    }
+    .footer-informacoes .equipe-footer {
+        width: 210px;
+    }
+    .footer-informacoes .redes-footer {
+        width: 190px;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+    .layout {
+        width: 300px;
+    }
+    .layout-menor{
+        width: 300px;
+    }
+    header#index-site-header {
+        height: 300px;
+        background-size: 100% 300px;
+    }
+    header#site-header {
+        height: 130px;
+        background-size: 100% 130px;
+    }
+    header#index-site-header .layout{
+        width: 500px;
+    }
+
+    header#site-header .layout{
+        width: 500px;
+    }
+
+    nav img{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .menu{
+        position: absolute;
+        margin: 0;
+        top: 20px;
+        right: 200px;
+        width: auto;
+        padding-right: 9px;
+        display: none;
+    }
+
+    .menu li{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+
+    .menu li a {
+        display: block;
+        font-size: 12px;
+        padding: 10px 0px;
+        padding-right: 5px;
+        padding-left: 3px;
+    }
+
+    .menu li ul{
+        top: 0;
+        left: -147px;
+    }
+
+    .menu li ul li a{
+        padding-right: 7px;
+        padding-left: 5px;
+    }
+    
+    .menu li ul li{
+        width: auto;
+        padding: 0;
+    }
+
+    #slide-conteiner{
+        left: 50%;
+        margin-left: -250px;
+        width: 500px;
+        height: 220px;
+    }
+
+    .banner {
+        width: 500px;
+        height: 220px;
+    }
+	
+	.pager{
+		display: none;	
+	}
+	
+    h1.index {
+        padding-top: 30px;
+    }
+
+    article > h1{
+        font-size: 22.5px;
+    }
+
+    article h2{
+        font-size: 17.5px;
+    }
+
+    #atividades{
+        margin: 0;
+    }
+
+    #atividades li {
+        width: 300px;
+        height: 160px;
+        margin-left: 0px;
+    }
+
+    .txt-esquerda{
+        width: 100%;
+        float: none;
+    }
+
+    article > .img-esquerda{
+        display: none;
+    }
+
+    .locais .img-centro2{
+        margin: 0;
+        margin-top: -20px;
+    }
+
+    .locais .img-esquerda{
+        position: relative;
+        width: 250px;
+        float: none;
+        margin-top: 0;
+        padding-bottom: 0px;
+    }
+
+    .contato{
+        font-size: 17px;
+    }
+    .contato a{
+        font-size: 16px;
+    }
+    .contato span{
+        font-size: 16px;
+    }
+	.botao{
+		width: 80px;
+		height: 45px;
+		font-size: 1.1em;
+	}
+
+    #galeria li{
+        width: 100%;
+        height: 208px;
+        margin-bottom: 20px;
+        list-style: none;
+        float: left;
+    }
+
+    .footer-informacoes .menu-footer {
+        text-align: center;
+        width: 300px;
+    }
+
+    .footer-informacoes .equipe-footer {
+        text-align: center;
+        width: 300px;
+    }
+
+    .footer-informacoes .redes-footer {
+        width: 300px;
+    }
+    .footer-informacoes .redes-footer img{
+        position: relative;
+        left: 30%;
+    }
+    .footer-conteudo{
+        height: auto;
+        padding-bottom: 15px;
+    }
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media (max-width: 500px) {
+    header#index-site-header {
+        height: 200px;
+        background-size: 100% 200px;
+    }
+    header#index-site-header .layout{
+        width: 300px;
+    }
+    header#site-header .layout{
+        width: 300px;
+    }
+    nav img{
+        margin-right: 0;
+    }
+    .menu{
+        position: absolute;
+        top: initial;
+        right: initial;
+        margin-top: 12px;
+        margin-left: 120px;
+        width: auto;
+        padding-right: 9px;
+        display: none;
+    }
+
+    .menu li{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+
+    .menu li a {
+        display: block;
+        font-size: 12px;
+        padding: 10px 0px;
+        padding-right: 5px;
+        padding-left: 3px;
+    }
+
+    .menu li ul{
+        top: 0;
+        left: -147px;
+    }
+
+    .menu li ul li a{
+        padding-right: 7px;
+        padding-left: 5px;
+    }
+    
+    .menu li ul li{
+        width: auto;
+        padding: 0;
+    }
+
+    #slide-conteiner{
+        left: 50%;
+        margin-left: -160px;
+        width: 304px;
+        height: 120px;
+    }
+
+    .banner {
+        width: 304px;
+        height: 120px;
+    }
+
+    h1.index {
+        padding-top: 30px;
+    }
+
+    article > h1{
+        font-size: 22.5px;
+    }
+
+    #atividades li {
+        width: 300px;
+        height: 160px;
+        margin-left: 0px;
+    }
+
+    .footer-informacoes .menu-footer {
+        width: 300px;
+    }
+
+    .footer-informacoes .equipe-footer {
+        width: 300px;
+    }
+
+    .footer-informacoes .redes-footer {
+        width: 300px;
+    }
+}
